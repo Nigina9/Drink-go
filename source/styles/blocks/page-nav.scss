@@ -1,0 +1,136 @@
+.page-nav {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+
+  @media (min-width:$tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  &__list {
+    @include list-clean;
+
+    @media (max-width:767px) {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 320px;
+      background-color: #ffffff;
+      top: 74px;
+      right: -19px;
+      z-index: 1;
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    @media (max-width:767px) {
+      border-bottom: 1px solid #f0ebff;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 20px 0;
+  }
+
+  &__user-list {
+    @include list-clean;
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-link {
+    display: block;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 22px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: currentColor;
+      mask-position: center;
+      mask-repeat: no-repeat;
+    }
+
+    &--account::before {
+      mask-image: url("../../icons/icon-account.svg");
+      mask-size: 16px 16px;
+    }
+
+    &--shop::before {
+      mask-image: url("../../icons/icon-shop.svg");
+      mask-size: 16px 16px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    @include visually-hidden;
+
+    @media (min-width:$desktop-width) {
+      @include visible-text;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .js-toggle-button {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+    appearance: none;
+  }
+
+  .js-toggle-button::after,
+  .js-toggle-button::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: center;
+    transform: translateX(-50%);
+  }
+
+  .js-toggle-button::before {
+    top: 7px;
+    box-shadow: 0 12px 0 #000000;
+  }
+
+  .js-toggle-button::after {
+    bottom: 7px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,17 +1,108 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <header class="page-header" data-test="header">
+    <div class="container page-header_wrapper">
+      <nav class="page-nav">
+        <a href="index.html" class="page-nav__logo">
+          <picture>
+            <source media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
+            <source media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
+            <img src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Drink go">
+          </picture>
+        </a>
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a href="index.html" class="page-nav__link">Главная</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">Каталог</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">Доставка</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#" class="page-nav__link">О нас</a>
+          </li>
+        </ul>
+        <ul class="page-nav__user-list">
+          <li>
+            <a class="page-nav__user-link page-nav__user-link--account">
+              <p class="page-nav__text">Войти</p>
+            </a>
+          </li>
+          <li>
+            <a class="page-nav__user-link page-nav__user-link--shop">
+              <p class="page-nav__text">Корзина</p>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="js-toggle-button">
+          <span class="visually-hidden">Меню навигации</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="main-hero">
+      <div class="slider slider--bgr-flat-white">
+        <div class="container main-hero__contаiner">
+          <picture>
+            <source media="(min-width:1280px)"
+              srcset="images/flat-white-desktop.png.png 1x, images/flat-white-desktop@2x.png 2x" width="600"
+              height="600">
+            <source media="(min-width:768px)"
+              srcset="images/flat-white-tablet.png 1x, images/flat-white-tablet@2x.png 2x" width="476" height="476">
+            <img src="images/flat-white.png" srcset="images/flat-white.png 1x, images/flat-white@2x.png 2x"
+              width="280px" height="280px" alt="Кофе Декаф Флэт Уайт">
+          </picture>
+          <div class="main-hero__wrapper"> <span class="main-hero__new-product">Новинка!</span>
+            <h1 class="main-hero__title">Декаф Флэт Уайт</h1>
+            <p class="main-hero__discription">Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня</p>
+            <div class="main-hero__wrapper-price">
+              <span class="main-hero__old-price">295&#8381</span>
+              <span class="main-hero__new-price">225&#8381</span>
+              <button class="button" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+         <div class="container main-hero__contаiner">
+          <picture>
+            <source media="(min-width:1280px)"
+              srcset="images/flat-white-desktop.png.png 1x, images/flat-white-desktop@2x.png 2x" width="600"
+              height="600">
+            <source media="(min-width:768px)"
+              srcset="images/flat-white-tablet.png 1x, images/flat-white-tablet@2x.png 2x" width="476" height="476">
+            <img src="images/flat-white.png" srcset="images/flat-white.png 1x, images/flat-white@2x.png 2x"
+              width="280px" height="280px" alt="Кофе Декаф Флэт Уайт">
+          </picture>
+          <div class="main-hero__wrapper"> <span class="main-hero__new-product">Новинка!</span>
+            <h1 class="main-hero__title">Декаф Флэт Уайт</h1>
+            <p class="main-hero__discription">Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня</p>
+            <div class="main-hero__wrapper-price">
+              <span class="main-hero__old-price">295&#8381</span>
+              <span class="main-hero__new-price">225&#8381</span>
+              <button class="button" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

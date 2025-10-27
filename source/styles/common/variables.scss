@@ -1,1 +1,45 @@
 /* здесь используйте глобальные переменные */
+// Цвета текта
+$color-white:#FFFFFF;
+$color-grey:#BDBDBD;
+$color-black:#333333;
+$color-primaty: #7859CF;
+$color-secondary:#F0EBFF;
+$bgd-grey:#F8F8F8;
+$bgd-flat:#F3EBE1;
+$bgd-lavender:#EAE6FC;
+$bgd-espresso:#E2E2E2;
+
+
+// // Разрешения экранов
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// оступы мобилка и планшет 20px, десктоп 40px
+@mixin list-clean() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin visible-text {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
