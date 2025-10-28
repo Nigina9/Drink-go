@@ -1,0 +1,132 @@
+.advantage {
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    @media (min-width:$tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 0 45px 0;
+
+    @media (min-width:$tablet-width) {
+      font-size: 42px;
+      line-height: 64px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    @include list-clean;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (min-width:$tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px 50px;
+    }
+
+    @media (min-width:$desktop-width) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    padding: 74px 0 0 0;
+    text-align: center;
+
+    @media (min-width:$tablet-width) {
+      width: 339px;
+      box-sizing: border-box;
+      padding: 0 0 0 82px;
+      text-align: left;
+    }
+
+    @media (min-width:$desktop-width) {
+      width: 317px;
+      padding: 82px 0 0 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    position: relative;
+
+    @media (min-width:$tablet-width) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 52px;
+      height: 56px;
+      right: 110px;
+      bottom: 30px;
+
+      @media(min-width:$tablet-width) {
+        bottom: -26px;
+        right: 271px;
+      }
+
+      @media(min-width:$desktop-width) {
+        bottom: 60px;
+        right: 130px;
+      }
+    }
+
+    &--speed {
+      &::before {
+        background-image: url("../../icons/icon-speed.svg");
+      }
+    }
+
+    &--comfort {
+      &::before {
+        background-image: url("../../icons/icon-comfort.svg");
+      }
+    }
+
+    &--energy {
+      &::before {
+        background-image: url("../../icons/icon-energy.svg");
+      }
+    }
+
+    &--ecology {
+      &::before {
+        background-image: url("../../icons/icon-ecology.svg");
+      }
+    }
+  }
+
+  &__despription {
+    margin: 0;
+
+    @media (min-width:$tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__short-description {
+    text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+.short-description {
+  display: block;
+  font-family: inherit;
+  color: $color-primaty;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+
+  @media (min-width:$desktop-width) {
+    text-align: left;
+  }
+}

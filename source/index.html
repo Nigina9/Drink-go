@@ -55,7 +55,8 @@
   </header>
   <main>
     <section class="main-hero">
-      <div class="slider slider--bgr-flat-white">
+      <!-- флет файт -->
+      <div class="slider slider--bgd-flat-white">
         <div class="container main-hero__contаiner">
           <picture>
             <source media="(min-width:1280px)"
@@ -66,7 +67,7 @@
             <img src="images/flat-white.png" srcset="images/flat-white.png 1x, images/flat-white@2x.png 2x"
               width="280px" height="280px" alt="Кофе Декаф Флэт Уайт">
           </picture>
-          <div class="main-hero__wrapper"> <span class="main-hero__new-product">Новинка!</span>
+          <div class="main-hero__wrapper"> <span class="short-description main-hero__new-product">Новинка!</span>
             <h1 class="main-hero__title">Декаф Флэт Уайт</h1>
             <p class="main-hero__discription">Свежесваренный кофе без кофеина из Эфиопии
               с натуральным фермерским молоком — то, что нужно
@@ -78,28 +79,84 @@
             </div>
           </div>
         </div>
-         <div class="container main-hero__contаiner">
+      </div>
+      <!-- лавандер -->
+      <div class="slider slider--bgd-lavander">
+        <div class="container main-hero__contаiner">
           <picture>
             <source media="(min-width:1280px)"
-              srcset="images/flat-white-desktop.png.png 1x, images/flat-white-desktop@2x.png 2x" width="600"
-              height="600">
-            <source media="(min-width:768px)"
-              srcset="images/flat-white-tablet.png 1x, images/flat-white-tablet@2x.png 2x" width="476" height="476">
-            <img src="images/flat-white.png" srcset="images/flat-white.png 1x, images/flat-white@2x.png 2x"
-              width="280px" height="280px" alt="Кофе Декаф Флэт Уайт">
+              srcset="images/lavender_desktop.png.png 1x, images/lavender_desktop@2x.png 2x" width="600" height="600">
+            <source media="(min-width:768px)" srcset="images/lavender_tablet.png 1x, images/lavender_tablet@2x.png 2x"
+              width="476" height="476">
+            <img src="images/lavender_img.png" srcset="images/lavender_img.png 1x, images/lavender_img@2x.png 2x"
+              width="280px" height="280px" alt="Кофе Лавандовый Латте">
           </picture>
-          <div class="main-hero__wrapper"> <span class="main-hero__new-product">Новинка!</span>
-            <h1 class="main-hero__title">Декаф Флэт Уайт</h1>
-            <p class="main-hero__discription">Свежесваренный кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком — то, что нужно
-              для расслабления после тяжёлого рабочего дня</p>
+          <div class="main-hero__wrapper"> <span class="short-description main-hero__new-product">Новинка!</span>
+            <h1 class="main-hero__title">Лавандовый Латте</h1>
+            <p class="main-hero__discription">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+              лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
             <div class="main-hero__wrapper-price">
-              <span class="main-hero__old-price">295&#8381</span>
-              <span class="main-hero__new-price">225&#8381</span>
+              <span class="main-hero__old-price">285&#8381</span>
+              <span class="main-hero__new-price">265&#8381</span>
               <button class="button" type="button">Заказать</button>
             </div>
           </div>
         </div>
+      </div>
+      <!-- еспрессо -->
+      <div class="slider slider--bgd-esprecco">
+        <div class="container main-hero__contаiner">
+          <picture>
+            <source media="(min-width:1280px)"
+              srcset="images/espresso_desktop.png 1x, images/espresso_desktop@2x.png 2x" width="600" height="600">
+            <source media="(min-width:768px)" srcset="images/espresso_tablet.png 1x, images/espresso_tablet@2x.png 2x"
+              width="476" height="476">
+            <img src="images/espresso_img.png" srcset="images/espresso_img.png 1x, images/espresso_img@2x.png 2x"
+              width="280px" height="280px" alt="Кофе Декаф Флэт Уайт">
+          </picture>
+          <div class="main-hero__wrapper"> <span class="short-description main-hero__new-product">Новинка!</span>
+            <h1 class="main-hero__title">Тройной Эспрессо</h1>
+            <p class="main-hero__discription">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
+              из&nbsp;Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="main-hero__wrapper-price">
+              <span class="main-hero__old-price">395&#8381</span>
+              <span class="main-hero__new-price">375&#8381</span>
+              <button class="button" type="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container advantage__container">
+        <span class="short-description advantage__short-description">Преимущества</span>
+        <h2 class="advantage__title">Главные причины выбрать Drink2Go</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <h3 class="advantage__subtitle advantage__subtitle--speed">Скорость</h3>
+            <p class="advantage__despription">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+
+          <li class="advantage__item">
+            <h3 class="advantage__subtitle advantage__subtitle--comfort">Удобство</h3>
+            <p class="advantage__despription">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </li>
+
+
+          <li class="advantage__item">
+            <h3 class="advantage__subtitle advantage__subtitle--energy">Бодрость</h3>
+            <p class="advantage__despription">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+
+          <li class="advantage__item">
+            <h3 class="advantage__subtitle advantage__subtitle--ecology">Экологичность</h3>
+            <p class="advantage__despription">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </li>
+
+        </ul>
       </div>
     </section>
   </main>

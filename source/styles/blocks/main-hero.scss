@@ -17,14 +17,6 @@
   }
 
   &__new-product {
-    display: block;
-    font-family: inherit;
-    color: $color-primaty;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
-    text-transform: uppercase;
     margin-bottom: 18px;
 
     @media(min-width:$tablet-width) {

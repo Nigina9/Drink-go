@@ -1,5 +1,27 @@
 .slider {
-  &--bgr-flat-white {
+  &--bgd-flat-white {
     background-color: $bgd-flat;
+  }
+
+  &--bgd-lavander {
+    background-color: $bgd-lavender;
+  }
+
+  &--bgd-esprecco {
+    background-color: $bgd-espresso;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    &--bgd-flat-white {
+      background-image: linear-gradient(#f3ebe1 70%, #fff 30%);
+    }
+
+    &--bgd-lavander {
+      background-image: linear-gradient($bgd-lavender 70%, #fff 30%);
+    }
+
+    &--bgd-esprecco {
+      background-image: linear-gradient($bgd-espresso 70%, #fff 30%);
+    }
   }
 }
